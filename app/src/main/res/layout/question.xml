@@ -4,6 +4,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     app:cardElevation="20dp"
+    app:cardBackgroundColor="#D3F1DB"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -23,6 +24,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@id/Text"
+            android:fontFamily="@font/fredokemedium"
             />
 
         <LinearLayout
@@ -47,6 +49,7 @@
                 app:strokeWidth="2dp"
                 android:backgroundTint="#50C878"
                 android:layout_margin="10dp"
+                android:fontFamily="@font/fredokaregular"
                 />
 
             <com.google.android.material.button.MaterialButton
@@ -62,6 +65,7 @@
                 app:strokeWidth="2dp"
                 android:backgroundTint="#50C878"
                 android:layout_margin="10dp"
+                android:fontFamily="@font/fredokaregular"
                 />
         </LinearLayout>
 

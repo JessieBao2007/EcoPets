@@ -62,6 +62,7 @@
             android:fontFamily="@font/fredokemedium"
             android:text="Habitat"
             android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/challengeBtn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -90,22 +91,11 @@
             android:fontFamily="@font/fredokemedium"
             android:text="Daily Challenges"
             android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/customizeBtn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/unityBtn" />
+            app:layout_constraintTop_toBottomOf="@id/habitatBtn" />
 
-        <Button
-            android:id="@+id/unityBtn"
-            android:layout_width="200dp"
-            android:layout_height="70dp"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="#62C578"
-            android:fontFamily="@font/fredokemedium"
-            android:text="Unity"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/habitatBtn" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

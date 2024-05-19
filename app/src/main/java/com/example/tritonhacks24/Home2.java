@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 public class Home2 extends AppCompatActivity {
 
@@ -15,7 +14,7 @@ public class Home2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home2);
 
-        Button habitatBtn = findViewById(R.id.habitatBtn);
+        Button habitatBtn = findViewById(R.id.submitBtn);
         Button unityBtn = findViewById(R.id.unityBtn);
         Button challengeBtn = findViewById(R.id.challengeBtn);
         Button customizeBtn = findViewById(R.id.customizeBtn);
@@ -41,15 +40,26 @@ public class Home2 extends AppCompatActivity {
             }
         });
 
-        habitatBtn.setOnClickListener(new View.OnClickListener() {
+        challengeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // open other view; create intent
-                Intent aboutIntent = new Intent(Home2.this, Habitat.class);
+                Intent aboutIntent = new Intent(Home2.this, Challenges.class);
                 // start activity
                 startActivity(aboutIntent);
             }
         });
+
+        customizeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // open other view; create intent
+                Intent aboutIntent = new Intent(Home2.this, Customize.class);
+                // start activity
+                startActivity(aboutIntent);
+            }
+        });
+
 
     }
 }

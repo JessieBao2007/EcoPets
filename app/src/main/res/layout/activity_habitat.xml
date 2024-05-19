@@ -94,7 +94,7 @@
                 tools:textAlignment="center" />
 
             <Button
-                android:id="@+id/habitatBtn"
+                android:id="@+id/submitBtn"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"

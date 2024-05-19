@@ -21,7 +21,7 @@ public class Adoption extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_adoption);
 
-        Button submitBtn = findViewById(R.id.submitBtn4);
+        Button submitBtn = findViewById(R.id.habitatBtn);
         Button elephantBtn = findViewById(R.id.elephantBtn);
         Button turtleBtn = findViewById(R.id.turtleBtn);
         TextInputEditText nameInput = findViewById(R.id.animalName);

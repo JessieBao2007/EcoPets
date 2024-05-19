@@ -36,18 +36,8 @@
                 android:text="EcoPals"
                 android:textAlignment="center"
                 android:textColor="#FFFFFF"
-                android:textSize="40sp" />
+                android:textSize="64sp" />
 
-            <TextView
-                android:id="@+id/pagetitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/fredokabold"
-                android:text="Second Home Screen"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp" />
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -63,54 +53,59 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:foregroundGravity="center">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:foregroundGravity="center"
-            android:orientation="vertical"
-            android:padding="20dp"
+        <Button
+            android:id="@+id/habitatBtn"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#62C578"
+            android:fontFamily="@font/fredokemedium"
+            android:text="Habitat"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/customizeBtn"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#62C578"
+            android:fontFamily="@font/fredokemedium"
+            android:text="Customize"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:gravity="center">
+            app:layout_constraintTop_toBottomOf="@+id/challengeBtn" />
 
-            <Button
-                android:id="@+id/submitBtn4"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="#62C578"
-                android:fontFamily="@font/fredokemedium"
-                android:text="Habitat" />
+        <Button
+            android:id="@+id/challengeBtn"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#62C578"
+            android:fontFamily="@font/fredokemedium"
+            android:text="Daily Challenges"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/unityBtn" />
 
-            <Button
-                android:id="@+id/unityBtn"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="#62C578"
-                android:fontFamily="@font/fredokemedium"
-                android:text="Unity" />
-
-            <Button
-                android:id="@+id/challengeBtn"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="#62C578"
-                android:fontFamily="@font/fredokemedium"
-                android:text="Daily Challenges" />
-
-            <Button
-                android:id="@+id/customizeBtn"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="#62C578"
-                android:fontFamily="@font/fredokemedium"
-                android:text="Customize" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/unityBtn"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#62C578"
+            android:fontFamily="@font/fredokemedium"
+            android:text="Unity"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/habitatBtn" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

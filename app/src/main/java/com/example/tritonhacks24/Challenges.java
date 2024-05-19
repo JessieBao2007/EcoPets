@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class Challenges extends AppCompatActivity {
 
@@ -44,7 +43,7 @@ public class Challenges extends AppCompatActivity {
         submit3 = findViewById(R.id.submitBtn3);
         challenge3 = findViewById(R.id.challenge3);
 
-        submit4 = findViewById(R.id.submitBtn4);
+        submit4 = findViewById(R.id.habitatBtn);
         challenge4 = findViewById(R.id.challenge4);
 
         allDoneText = findViewById(R.id.allDoneText);

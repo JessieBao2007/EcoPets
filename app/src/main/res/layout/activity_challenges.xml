@@ -1,32 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#065938"
-    tools:context=".Challenges">
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#065938"
+        tools:context=".Challenges">
 
-    <TextView
-        android:id="@+id/allDoneText"
-        android:layout_width="380dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/fredokaregular"
-        android:padding="20dp"
-        android:text="Hooray, you completed today's challenges! Every step you take in saving resources and keeping the environment clean helps protect endangered species."
-        android:textAlignment="center"
-        android:textColor="#D2F0DA"
-        android:textSize="20sp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/allDoneText"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fredokaregular"
+            android:padding="20dp"
+            android:text="Hooray, you completed today's challenges! Every step you take in saving resources and keeping the environment clean helps protect endangered species."
+            android:textAlignment="center"
+            android:textColor="#D2F0DA"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="380dp"
+        android:layout_height="420dp"
         android:layout_marginTop="40dp"
+        android:foregroundGravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,47 +48,47 @@
                 android:foregroundGravity="center"
                 tools:foregroundGravity="center">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/textView"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:foregroundGravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/fredokemedium"
+                    android:text="Beach Clean-Up!"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:gravity="center">
+                    tools:textAlignment="center" />
 
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/fredokemedium"
-                        android:text="Beach Clean-Up!"
-                        android:textSize="18sp"
-                        tools:textAlignment="center" />
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/fredokaregular"
+                    android:text="By cleaning the beach, you're protecting habitats and stopping pollution that harms endangered species like sea turtles."
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"
+                    tools:textAlignment="center" />
 
-                    <TextView
-                        android:id="@+id/textView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/fredokaregular"
-                        android:text="By cleaning the beach, you're protecting habitats and stopping pollution that harms endangered species like sea turtles."
-                        android:textSize="16sp"
-                        tools:textAlignment="center" />
-
-                    <Button
-                        android:id="@+id/submitBtn"
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:backgroundTint="#62C578"
-                        android:fontFamily="@font/fredokemedium"
-                        android:text="+30 points" />
-
-                </LinearLayout>
+                <Button
+                    android:id="@+id/submitBtn"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#62C578"
+                    android:fontFamily="@font/fredokemedium"
+                    android:text="+30 points"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -100,47 +101,47 @@
                 android:foregroundGravity="center"
                 tools:foregroundGravity="center">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/textView3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:foregroundGravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/fredokemedium"
+                    android:text="Plant a Tree!"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:gravity="center">
+                    tools:textAlignment="center" />
 
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/fredokemedium"
-                        android:text="Plant a Tree!"
-                        android:textSize="18sp"
-                        tools:textAlignment="center" />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/fredokaregular"
+                    android:text="By planting trees, you're providing shelter and food for endangered species and preventing deforestation."
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3"
+                    tools:textAlignment="center" />
 
-                    <TextView
-                        android:id="@+id/textView4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/fredokaregular"
-                        android:text="By planting trees, you're providing shelter and food for endangered species and preventing deforestation."
-                        android:textSize="16sp"
-                        tools:textAlignment="center" />
-
-                    <Button
-                        android:id="@+id/submitBtn2"
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:backgroundTint="#62C578"
-                        android:fontFamily="@font/fredokemedium"
-                        android:text="+30 points" />
-
-                </LinearLayout>
+                <Button
+                    android:id="@+id/submitBtn2"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#62C578"
+                    android:fontFamily="@font/fredokemedium"
+                    android:text="+30 points"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -153,47 +154,47 @@
                 android:foregroundGravity="center"
                 tools:foregroundGravity="center">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/textView5"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:foregroundGravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/fredokemedium"
+                    android:text="Shorten Your Shower by 10 Minutes!"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:gravity="center">
+                    tools:textAlignment="center" />
 
-                    <TextView
-                        android:id="@+id/textView5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/fredokemedium"
-                        android:text="Shorten Your Shower by 10 Minutes!"
-                        android:textSize="18sp"
-                        tools:textAlignment="center" />
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/fredokaregular"
+                    android:text="By conserving water, you're ensuring there's enough for both humans and wildlife. Every drop counts!"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView5"
+                    tools:textAlignment="center" />
 
-                    <TextView
-                        android:id="@+id/textView6"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/fredokaregular"
-                        android:text="By conserving water, you're ensuring there's enough for both humans and wildlife. Every drop counts!"
-                        android:textSize="16sp"
-                        tools:textAlignment="center" />
-
-                    <Button
-                        android:id="@+id/submitBtn3"
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:backgroundTint="#62C578"
-                        android:fontFamily="@font/fredokemedium"
-                        android:text="+20 points" />
-
-                </LinearLayout>
+                <Button
+                    android:id="@+id/submitBtn3"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#62C578"
+                    android:fontFamily="@font/fredokemedium"
+                    android:text="+20 points"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -205,111 +206,428 @@
                 android:foregroundGravity="center"
                 tools:foregroundGravity="center">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/textView7"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:foregroundGravity="center"
-                    android:orientation="vertical"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/fredokemedium"
+                    android:text="Recycle 10 Objects!"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:gravity="center">
+                    tools:textAlignment="center" />
 
-                    <TextView
-                        android:id="@+id/textView7"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/fredokemedium"
-                        android:text="Recycle 10 Objects!"
-                        android:textSize="18sp"
-                        tools:textAlignment="center" />
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/fredokaregular"
+                    android:text="By recycling, you're reducing waste and saving habitats from destruction caused by extracting resources."
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7"
+                    tools:textAlignment="center" />
 
-                    <TextView
-                        android:id="@+id/textView8"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:fontFamily="@font/fredokaregular"
-                        android:text="By recycling, you're reducing waste and saving habitats from destruction caused by extracting resources."
-                        android:textSize="16sp"
-                        tools:textAlignment="center" />
-
-                    <Button
-                        android:id="@+id/submitBtn4"
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="20dp"
-                        android:backgroundTint="#62C578"
-                        android:fontFamily="@font/fredokemedium"
-                        android:text="+10 points" />
-                </LinearLayout>
+                <Button
+                    android:id="@+id/habitatBtn"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#62C578"
+                    android:fontFamily="@font/fredokemedium"
+                    android:text="+10 points"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </ScrollView>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:background="@drawable/border"
-        android:foregroundGravity="center|center_horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:orientation="vertical"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:foregroundGravity="center|center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/appname"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/fredokabold"
-                android:text="EcoPals"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp" />
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-            <TextView
-                android:id="@+id/pagetitle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/fredokabold"
-                android:text="Daily Challenges!"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp" />
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/appname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredokabold"
+                    android:text="EcoPals"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/pagetitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fredokabold"
+                    android:text="Daily Challenges!"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/homeBtn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/homeicon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+    <!-- <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#065938"
+        tools:context=".Challenges">
 
-        <ImageView
-            android:id="@+id/homeBtn"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+        <TextView
+            android:id="@+id/allDoneText"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fredokaregular"
+            android:padding="20dp"
+            android:text="Hooray, you completed today's challenges! Every step you take in saving resources and keeping the environment clean helps protect endangered species."
+            android:textAlignment="center"
+            android:textColor="#D2F0DA"
+            android:textSize="20sp"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/homeicon" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="380dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/challenge1"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/light_green_bg"
+                    android:foregroundGravity="center"
+                    tools:foregroundGravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foregroundGravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:gravity="center">
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fredokemedium"
+                            android:text="Beach Clean-Up!"
+                            android:textSize="18sp"
+                            tools:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/fredokaregular"
+                            android:text="By cleaning the beach, you're protecting habitats and stopping pollution that harms endangered species like sea turtles."
+                            android:textSize="16sp"
+                            tools:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/submitBtn"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:backgroundTint="#62C578"
+                            android:fontFamily="@font/fredokemedium"
+                            android:text="+30 points" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/challenge2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/light_green_bg"
+                    android:foregroundGravity="center"
+                    tools:foregroundGravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foregroundGravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:gravity="center">
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fredokemedium"
+                            android:text="Plant a Tree!"
+                            android:textSize="18sp"
+                            tools:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/fredokaregular"
+                            android:text="By planting trees, you're providing shelter and food for endangered species and preventing deforestation."
+                            android:textSize="16sp"
+                            tools:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/submitBtn2"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:backgroundTint="#62C578"
+                            android:fontFamily="@font/fredokemedium"
+                            android:text="+30 points" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/challenge3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/light_green_bg"
+                    android:foregroundGravity="center"
+                    tools:foregroundGravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foregroundGravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:gravity="center">
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fredokemedium"
+                            android:text="Shorten Your Shower by 10 Minutes!"
+                            android:textSize="18sp"
+                            tools:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/fredokaregular"
+                            android:text="By conserving water, you're ensuring there's enough for both humans and wildlife. Every drop counts!"
+                            android:textSize="16sp"
+                            tools:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/submitBtn3"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:backgroundTint="#62C578"
+                            android:fontFamily="@font/fredokemedium"
+                            android:text="+20 points" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/challenge4"
+                    android:layout_width="360dp"
+                    android:layout_height="200dp"
+                    android:background="@drawable/light_green_bg"
+                    android:foregroundGravity="center"
+                    tools:foregroundGravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foregroundGravity="center"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:gravity="center">
+
+                        <TextView
+                            android:id="@+id/textView7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/fredokemedium"
+                            android:text="Recycle 10 Objects!"
+                            android:textSize="18sp"
+                            tools:textAlignment="center" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/fredokaregular"
+                            android:text="By recycling, you're reducing waste and saving habitats from destruction caused by extracting resources."
+                            android:textSize="16sp"
+                            tools:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/submitBtn4"
+                            android:layout_width="160dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:backgroundTint="#62C578"
+                            android:fontFamily="@font/fredokemedium"
+                            android:text="+10 points" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/border"
+            android:foregroundGravity="center|center_horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/appname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fredokabold"
+                    android:text="EcoPals"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp" />
+
+                <TextView
+                    android:id="@+id/pagetitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/fredokabold"
+                    android:text="Daily Challenges!"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/homeBtn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/homeicon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout> -->

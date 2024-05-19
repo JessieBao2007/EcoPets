@@ -94,7 +94,7 @@
                 tools:textAlignment="center" />
 
             <Button
-                android:id="@+id/submitBtn"
+                android:id="@+id/submitBtn4"
                 android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"

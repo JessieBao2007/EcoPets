@@ -14,7 +14,7 @@ public class Home2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home2);
 
-        Button habitatBtn = findViewById(R.id.submitBtn);
+        Button habitatBtn = findViewById(R.id.submitBtn4);
         Button unityBtn = findViewById(R.id.unityBtn);
         Button challengeBtn = findViewById(R.id.challengeBtn);
         Button customizeBtn = findViewById(R.id.customizeBtn);

@@ -23,6 +23,7 @@
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/challenge1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="15dp"
@@ -43,7 +44,7 @@
                     tools:gravity="center">
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/textView"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/fredokemedium"
@@ -52,7 +53,7 @@
                         tools:textAlignment="center" />
 
                     <TextView
-                        android:id="@+id/textView3"
+                        android:id="@+id/textView2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -62,7 +63,7 @@
                         tools:textAlignment="center" />
 
                     <Button
-                        android:id="@+id/submitBtn2"
+                        android:id="@+id/submitBtn"
                         android:layout_width="160dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -75,6 +76,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/challenge2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="15dp"
@@ -114,7 +116,7 @@
                         tools:textAlignment="center" />
 
                     <Button
-                        android:id="@+id/submitBtn3"
+                        android:id="@+id/submitBtn2"
                         android:layout_width="160dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -127,6 +129,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/challenge3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="15dp"
@@ -166,7 +169,7 @@
                         tools:textAlignment="center" />
 
                     <Button
-                        android:id="@+id/submitBtn2"
+                        android:id="@+id/submitBtn3"
                         android:layout_width="160dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
@@ -179,6 +182,7 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/challenge4"
                 android:layout_width="360dp"
                 android:layout_height="wrap_content"
                 android:background="@drawable/light_green_bg"
@@ -217,7 +221,7 @@
                         tools:textAlignment="center" />
 
                     <Button
-                        android:id="@+id/submitBtn"
+                        android:id="@+id/submitBtn4"
                         android:layout_width="160dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"

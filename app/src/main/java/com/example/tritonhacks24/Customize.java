@@ -2,6 +2,7 @@ package com.example.tritonhacks24;
 
 import static com.example.tritonhacks24.Adoption.aniType;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,6 +23,8 @@ public class Customize extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customize);
+
+        ImageView homeBtn = findViewById(R.id.homeBtn);
 
         pointsTextView = findViewById(R.id.pointsTextView);
         accessoryImage = findViewById(R.id.accessoryImage);
@@ -58,6 +61,16 @@ public class Customize extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 changeAccessory(R.drawable.crown, 50);
+            }
+        });
+
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // open other view; create intent
+                Intent aboutIntent = new Intent(Customize.this, Home2.class);
+                // start activity
+                startActivity(aboutIntent);
             }
         });
     }

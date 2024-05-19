@@ -17,7 +17,6 @@ public class Home2 extends AppCompatActivity {
         setContentView(R.layout.activity_home2);
 
         Button habitatBtn = findViewById(R.id.habitatBtn);
-        Button unityBtn = findViewById(R.id.unityBtn);
         Button challengeBtn = findViewById(R.id.challengeBtn);
         Button customizeBtn = findViewById(R.id.customizeBtn);
 
@@ -38,12 +37,7 @@ public class Home2 extends AppCompatActivity {
             }
         });
 
-        unityBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
 
         challengeBtn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -63,6 +63,7 @@ public class Challenges extends AppCompatActivity {
             public void onClick(View v) {
                 challenge1.setVisibility(View.GONE);
                 checkAllChallengesComplete();
+                Adoption.points +=30;
             }
         });
 
@@ -71,6 +72,7 @@ public class Challenges extends AppCompatActivity {
             public void onClick(View v) {
                 challenge2.setVisibility(View.GONE);
                 checkAllChallengesComplete();
+                Adoption.points+=30;
             }
         });
 
@@ -79,6 +81,7 @@ public class Challenges extends AppCompatActivity {
             public void onClick(View v) {
                 challenge3.setVisibility(View.GONE);
                 checkAllChallengesComplete();
+                Adoption.points+=20;
             }
         });
 
@@ -87,6 +90,7 @@ public class Challenges extends AppCompatActivity {
             public void onClick(View v) {
                 challenge4.setVisibility(View.GONE);
                 checkAllChallengesComplete();
+                Adoption.points+=10;
             }
         });
     }

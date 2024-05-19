@@ -1,6 +1,7 @@
 package com.example.tritonhacks24;
 
 import static com.example.tritonhacks24.Adoption.aniType;
+import static com.example.tritonhacks24.Adoption.animalName;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,7 +14,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Customize extends AppCompatActivity {
-    public int points = 100;
+    public int points = Adoption.points;
 
     private TextView pointsTextView;
     private ImageView accessoryImage;
@@ -23,16 +24,22 @@ public class Customize extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_customize);
+        points = Adoption.points;
 
         ImageView homeBtn = findViewById(R.id.homeBtn);
 
         pointsTextView = findViewById(R.id.pointsTextView);
         accessoryImage = findViewById(R.id.accessoryImage);
         animalImage = findViewById(R.id.animalImage);
+        pointsTextView.setText("Points: " + points);
 
         Button hatButton = findViewById(R.id.hatButton);
         Button bowButton = findViewById(R.id.bowButton);
         Button crownButton = findViewById(R.id.crownButton);
+
+        TextView customizeText = findViewById(R.id.pagetitle);
+
+        customizeText.setText("Customize " + animalName + "!");
 
         if (aniType.equals("turtle")) {
             animalImage.setImageResource(R.drawable.turtlejiya);
@@ -130,3 +137,5 @@ public class Customize extends AppCompatActivity {
         accessoryImage.setLayoutParams(layoutParams);
     }
 }
+
+

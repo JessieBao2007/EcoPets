@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import static com.example.tritonhacks24.Adoption.aniType;
+
 
 public class Home2 extends AppCompatActivity {
 
@@ -23,20 +25,23 @@ public class Home2 extends AppCompatActivity {
         habitatBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // open other view; create intent
-                Intent aboutIntent = new Intent(Home2.this, Habitat.class);
-                // start activity
-                startActivity(aboutIntent);
+                if(aniType.equals("turtle")) {
+                    // open other view; create intent
+                    Intent aboutIntent = new Intent(Home2.this, Habitat.class);
+                    // start activity
+                    startActivity(aboutIntent);
+                }else{
+                    Intent aboutIntent = new Intent(Home2.this, Habitat2.class);
+                    // start activity
+                    startActivity(aboutIntent);
+                }
             }
         });
 
         unityBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // open other view; create intent
-                Intent aboutIntent = new Intent(Home2.this, Unity.class);
-                // start activity
-                startActivity(aboutIntent);
+
             }
         });
 

@@ -16,6 +16,7 @@ public class Adoption extends AppCompatActivity {
     public static String aniType = "elephant";
     public static String animalName = "Bob";
 
+    public static int points = 100;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

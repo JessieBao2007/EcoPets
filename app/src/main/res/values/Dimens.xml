@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="elephant_trash_top_margin">15dp</dimen>
+    <dimen name="elephant_hat_top_margin">17dp</dimen>
+    <dimen name="elephant_bow_top_margin">45dp</dimen>
+    <dimen name="elephant_crown_top_margin">15dp</dimen>
+    <dimen name="turtle_trash_top_margin">50dp</dimen>
+    <dimen name="turtle_hat_top_margin">60dp</dimen>
+    <dimen name="turtle_bow_top_margin">90dp</dimen>
+    <dimen name="turtle_crown_top_margin">50dp</dimen>
+</resources>
